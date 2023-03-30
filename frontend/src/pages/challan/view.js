@@ -2,15 +2,15 @@ import React from 'react'
 import Head from 'next/head'
 import themeConfig from 'src/configs/themeConfig'
 
-function Search() {
+function View() {
   return (
     <>
       <Head>
-        <title>Search Challan - {themeConfig.templateName}</title>
+        <title>View Challan - {themeConfig.templateName}</title>
       </Head>
-      <div>Search</div>
+      <div>View Challan</div>
     </>
   )
 }
 
-export default Search
+export default View

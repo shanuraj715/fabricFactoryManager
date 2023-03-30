@@ -31,9 +31,9 @@ const navigation = () => {
       openInNewTab: false
     },
     {
-      title: 'Search Challan',
+      title: 'View Challan',
       icon: Search,
-      path: '/challan/search',
+      path: '/challan/view',
       openInNewTab: false
     },
     {

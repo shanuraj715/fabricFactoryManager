@@ -179,9 +179,10 @@ function Create(props) {
                                 <Button xs={8} size='large' type='submit' sx={{ mr: 2, mb: 2 }} variant='contained'>
                                     Add Item
                                 </Button>
+                                {data.length > 0 && 
                                 <Button size='large' color='error' variant='outlined' sx={{ mb: 2 }} onClick={handleDeleteLastAddedItem}>
                                     Delete Last Added
-                                </Button>
+                                </Button> }
                             </form>
                         </CardContent>
                     </Card>
