@@ -1,5 +1,5 @@
 // const config = require('config');
-const bcrypt = require("bcrypt")
+const bcryptjs = require("bcryptjs")
 
 const saltRounds = 6; // rounds for password hashing
 
@@ -10,13 +10,13 @@ global.log = function (data) {
 }
 
 global.encPassword = async (password) => {
-    const salt = await bcrypt.genSalt(saltRounds)
-    const hash = await bcrypt.hash(password, salt)
+    const salt = await bcryptjs.genSalt(saltRounds)
+    const hash = await bcryptjs.hash(password, salt)
     return hash
 }
 
 global.verifyPassword = async (password, hash) => {
-    const compared = await bcrypt.compare(password, hash)
+    const compared = await bcryptjs.compare(password, hash)
     return compared
 }
 
